@@ -4,4 +4,9 @@ text = """
 """
 
 # TODO
-
+cleantext = text.replace(",","")
+cleantext = cleantext.replace(".","")
+words = cleantext.split()
+wordscount=list(map(len,list(words)))
+result=''.join(map(str,wordscount))
+print(result)
